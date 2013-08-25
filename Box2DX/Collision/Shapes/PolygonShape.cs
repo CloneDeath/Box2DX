@@ -124,7 +124,7 @@ namespace Box2DX.Collision
 			_normals[1].Set(1.0f, 0.0f);
 			_normals[2].Set(0.0f, 1.0f);
 			_normals[3].Set(-1.0f, 0.0f);
-			_centroid = new Vec2(0);
+			_centroid = new Vec2(0, 0);
 		}
 
 
@@ -258,7 +258,7 @@ namespace Box2DX.Collision
 				upper = Common.Math.Max(upper, v);
 			}
 
-			Vec2 r = new Vec2(_radius);
+			Vec2 r = new Vec2(_radius, _radius);
 			aabb.LowerBound = lower - r;
 			aabb.UpperBound = upper + r;
 		}
@@ -291,13 +291,13 @@ namespace Box2DX.Collision
 
 			Box2DXDebug.Assert(_vertexCount >= 3);
 
-			Vec2 center = new Vec2(0);
+			Vec2 center = new Vec2(0, 0);
 			float area = 0.0f;
 			float I = 0.0f;
 
 			// pRef is the reference point for forming triangles.
 			// It's location doesn't change the result (except for rounding error).
-			Vec2 pRef = new Vec2(0);
+			Vec2 pRef = new Vec2(0, 0);
 
 #if O
 			// This code would put the reference point inside the polygon.
@@ -430,7 +430,7 @@ namespace Box2DX.Collision
 
 			//Initialize accumulator
 			float area = 0;
-			Vec2 center = new Vec2(0);
+			Vec2 center = new Vec2(0, 0);
 			Vec2 p2 = _vertices[intoIndex2];
 			Vec2 p3;
 
@@ -532,12 +532,12 @@ namespace Box2DX.Collision
 		{
 			Box2DXDebug.Assert(count >= 3);
 
-			Vec2 c = new Vec2(0f);
+			Vec2 c = new Vec2(0f, 0f);
 			float area = 0f;
 
 			// pRef is the reference point for forming triangles.
 			// It's location doesn't change the result (except for rounding error).
-			Vec2 pRef = new Vec2(0f);
+			Vec2 pRef = new Vec2(0f, 0f);
 #if O
 			// This code would put the reference point inside the polygon.
 			for (int i = 0; i < count; ++i)

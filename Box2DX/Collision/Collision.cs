@@ -418,7 +418,7 @@ namespace Box2DX.Collision
 			Vec2 d = input.P2 - input.P1;
 			Vec2 absD = Common.Math.Abs(d);
 
-			Vec2 normal = new Vec2(0);
+			Vec2 normal = new Vec2(0, 0);
 
 			for (int i = 0; i < 2; ++i)
 			{
