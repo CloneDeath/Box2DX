@@ -1,2 +1,8 @@
 /Examples/TestBed/TestBed.csproj.user
 /Box2DX.suo
+/Box2DX/bin
+/Box2DX/obj
+/Examples/HelloWorld/bin
+/Examples/HelloWorld/obj
+/Examples/TestBed/bin
+/Examples/TestBed/obj
