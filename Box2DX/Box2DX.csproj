@@ -87,6 +87,7 @@
     <Compile Include="Common\Vec3.cs" />
     <Compile Include="Common\XForm.cs" />
     <Compile Include="Dynamics\Body.cs" />
+    <Compile Include="Dynamics\CircleDef.cs" />
     <Compile Include="Dynamics\ContactManager.cs" />
     <Compile Include="Dynamics\Contacts\CircleContact.cs" />
     <Compile Include="Dynamics\Contacts\Contact.cs" />
@@ -102,7 +103,10 @@
     <Compile Include="Dynamics\Controllers\Controller.cs" />
     <Compile Include="Dynamics\Controllers\GravityController.cs" />
     <Compile Include="Dynamics\Controllers\TensorDampingController.cs" />
+    <Compile Include="Dynamics\EdgeDef.cs" />
+    <Compile Include="Dynamics\FilterData.cs" />
     <Compile Include="Dynamics\Fixture.cs" />
+    <Compile Include="Dynamics\FixtureDef.cs" />
     <Compile Include="Dynamics\Island.cs" />
     <Compile Include="Dynamics\Joints\DistanceJoint.cs" />
     <Compile Include="Dynamics\Joints\GearJoint.cs" />
@@ -112,6 +116,7 @@
     <Compile Include="Dynamics\Joints\PrismaticJoint.cs" />
     <Compile Include="Dynamics\Joints\PulleyJoint.cs" />
     <Compile Include="Dynamics\Joints\RevoluteJoint.cs" />
+    <Compile Include="Dynamics\PolygonDef.cs" />
     <Compile Include="Dynamics\World.cs" />
     <Compile Include="Dynamics\WorldCallbacks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
